@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  investimentos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3001:3000"  # Ajuste a porta conforme necessário 
